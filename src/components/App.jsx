@@ -41,7 +41,7 @@ const App = () => {
       setImages(prevImages => [...prevImages, ...response.data.hits]);
       setCurrentPage(prevPage => prevPage + 1);
     } catch (error) {
-      Notiflix.Notify.failure('Something went wrong. Try again.');
+      Notiflix.Notify.failure('Something went wrong. Please try again.');
     } finally {
       setIsLoading(false);
     }
